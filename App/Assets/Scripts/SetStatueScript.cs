@@ -6,7 +6,7 @@ public class SetStatueScript : MonoBehaviour
 {
     public void Kip1()
     {
-    	PlayerPrefs.SetString("statue", "Plant");
+    	PlayerPrefs.SetString("statue", "Evridika");
     }
 
     public void Kip2()
@@ -16,6 +16,6 @@ public class SetStatueScript : MonoBehaviour
 
     public void Kip3()
     {
-        PlayerPrefs.SetString("statue", "Plant");
+        PlayerPrefs.SetString("statue", "Kip3");
     }
 }

@@ -8,12 +8,12 @@ using TMPro;
 public class ARPlacement : MonoBehaviour
 {
 
-    public GameObject arObjectToSpawn;
+    public GameObject[] arObjectsToSpawn;
     public GameObject placementIndicator;
     public GameObject button;
     public GameObject instructions;
     public GameObject arrowDown;
-    public TMP_Text nameOfStatue;
+    public GameObject details;
 
     private GameObject spawnedObject;
     private Pose PlacementPose;
@@ -23,6 +23,7 @@ public class ARPlacement : MonoBehaviour
     void Start()
     {
         aRRaycastManager = FindObjectOfType<ARRaycastManager>();
+        arObjectsToSpawn = Resources.LoadAll<GameObject>("Prefabs");
     }
 
     // need to update placement indicator, placement pose and spawn 
@@ -69,14 +70,31 @@ public class ARPlacement : MonoBehaviour
 
     void ARPlaceObject()
     {
+        var arObjectToSpawn = getObject();
         spawnedObject = Instantiate(arObjectToSpawn, PlacementPose.position, PlacementPose.rotation);
         instructions.SetActive(false);
         button.SetActive(true);
-        nameOfStatue.text = PlayerPrefs.GetString("statue");
+        details.SetActive(true); //PlayerPrefs.GetString("statue");
         arrowDown.SetActive(true);
     }
 
+    GameObject getObject()
+    {
+        Debug.Log(PlayerPrefs.GetString("statue"));
 
+        if (PlayerPrefs.GetString("statue") == "Evridika")
+        {
+            return arObjectsToSpawn[0];
+        }
+        else if (PlayerPrefs.GetString("statue") == "Plant")
+        {
+            return arObjectsToSpawn[1];
+        }
+        else
+        {
+            return null;
+        }
+    }
 }
 
 

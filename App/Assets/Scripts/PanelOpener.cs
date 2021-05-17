@@ -7,6 +7,13 @@ public class PanelOpener : MonoBehaviour
 	public GameObject Panel;
     public GameObject arrowUp;
     public GameObject arrowDown;
+/*
+    public GameObject nameOfStatue;
+    public GameObject nameOfSculptor;
+    public GameObject yearOfSculpting;
+    public GameObject statueDetails;*/
+
+    public GameObject text;
     
     public void openPanel()
     {
@@ -18,7 +25,7 @@ public class PanelOpener : MonoBehaviour
     		{
     			bool isOpen = animator.GetBool("open");
     			animator.SetBool("open", !isOpen);
-
+                
                 if (isOpen)
                 {
                     arrowUp.SetActive(false);
@@ -32,4 +39,10 @@ public class PanelOpener : MonoBehaviour
     		}
     	}
     }
+/*
+    IEnumerator TextCoroutine()
+    {
+        yield return new WaitForSeconds(1);
+        text.SetActive(true);
+    }*/
 }
