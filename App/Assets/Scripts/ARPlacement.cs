@@ -10,10 +10,7 @@ public class ARPlacement : MonoBehaviour
 
     public GameObject[] arObjectsToSpawn;
     public GameObject placementIndicator;
-    public GameObject button;
     public GameObject instructions;
-    public GameObject arrowDown;
-    public GameObject details;
 
     private GameObject spawnedObject;
     private Pose PlacementPose;
@@ -73,9 +70,6 @@ public class ARPlacement : MonoBehaviour
         var arObjectToSpawn = getObject();
         spawnedObject = Instantiate(arObjectToSpawn, PlacementPose.position, PlacementPose.rotation);
         instructions.SetActive(false);
-        button.SetActive(true);
-        details.SetActive(true); //PlayerPrefs.GetString("statue");
-        arrowDown.SetActive(true);
     }
 
     GameObject getObject()
@@ -86,7 +80,7 @@ public class ARPlacement : MonoBehaviour
         {
             return arObjectsToSpawn[0];
         }
-        else if (PlayerPrefs.GetString("statue") == "Plant")
+        else if (PlayerPrefs.GetString("statue") == "Balet")
         {
             return arObjectsToSpawn[1];
         }

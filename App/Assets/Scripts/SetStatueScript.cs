@@ -11,11 +11,11 @@ public class SetStatueScript : MonoBehaviour
 
     public void Kip2()
     {
-        PlayerPrefs.SetString("statue", "Plant");
+        PlayerPrefs.SetString("statue", "Balet");
     }
 
     public void Kip3()
     {
-        PlayerPrefs.SetString("statue", "Kip3");
+        PlayerPrefs.SetString("statue", "Pan");
     }
 }
