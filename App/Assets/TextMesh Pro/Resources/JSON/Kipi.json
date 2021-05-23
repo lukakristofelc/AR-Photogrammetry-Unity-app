@@ -12,11 +12,35 @@
             "Kipar": "Stojan Batič",
             "Posebnosti": "Bronast kip plesalca in plesalke, ki plešeta balet krasi park Tivoli v Ljubljani."
         },
-        {
-            "Naslov": "Pan",
-            "Izdelava": "1960",
-            "Kipar": "Stojan Batič",
-            "Posebnosti": "Skulptura je narejena iz brona, upodablja pa Pana, ki igra na flavto."
+	{
+            "Naslov": "Franc Ksaver Meško",
+            "Izdelava": "1984",
+            "Kipar": "Rade Nikolić",
+            "Posebnosti": "Bronast kip največjega slovenjegraškega pisatelja in duhovnika stoji pred cerkvijo Svetega Duha v Slovenj Gradcu."
+        },
+		{
+            "Naslov": "Kip Mathatme Gandhija",
+            "Izdelava": "2010",
+            "Kipar": "Ram Vanji Sutar",
+            "Posebnosti": "Kip Gandhija je mestu Slovenj Gradec podarilo indijsko veleposlaništvo v Sloveniji, saj so presodili, da je mesto z naslovom mesto Glasnik miru primeren kraj za spomenik indijskemu borcu za mir."
+        },
+		{
+            "Naslov": "Spomenik Radu Iršiču",
+            "Izdelava": "1961",
+            "Kipar": "Stane Keržič",
+            "Posebnosti": "Bronast kip narodnemu heroju Radu Iršiču Greglu stoji v Parku Herojev v Slovenj Gradcu poleg kipov ostalih herojem narodnoosvobodilne borbe."
+        },
+		{
+            "Naslov": "Fons Vitae - Hoja",
+            "Izdelava": "2002",
+            "Kipar": "Mirko Bratuša",
+            "Posebnosti": "Kip skupaj s deli Izvir in Obelisk predstavlja triptih Fons Vitae (Vodnjak Življenja). Vsi trije kipi so postavljeni v centru Slovenj Gradca."
+        },
+    	{   
+	        "Naslov": "Bellosics (Belošič) Bálint",
+	        "Izdelava": "2013",
+	        "Kipar": "Ferenc Király",
+	        "Posebnosti": "Kip je posvečen pripadniku madžarske manjšine v Sloveniji, etnografu, pedagogu in zgodovinarju Bálintu Bellosicsu."
         }
     ]
 }

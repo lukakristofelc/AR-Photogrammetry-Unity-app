@@ -21,7 +21,6 @@ public class PanelOpener : MonoBehaviour
         Debug.Log (PlayerPrefs.GetString("statue"));
         Debug.Log(Application.dataPath);
         string text = Resources.Load<TextAsset>("JSON/Kipi").text;
-        //string jsonString = File.ReadAllText (Application.dataPath+"/Scripts/Kipi.json"); 
         JSONNode data = JSON.Parse(text);
         foreach(JSONNode kip in data["Kipi"])
         {

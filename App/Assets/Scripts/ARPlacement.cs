@@ -84,8 +84,25 @@ public class ARPlacement : MonoBehaviour
         {
             return arObjectsToSpawn[1];
         }
+        else if (PlayerPrefs.GetString("statue") == "Mesko")
+        {
+            return arObjectsToSpawn[2];
+        }
+        else if (PlayerPrefs.GetString("statue") == "Gandhi")
+        {
+            return arObjectsToSpawn[3];
+        }
+        else if (PlayerPrefs.GetString("statue") == "Gregl")
+        {
+            return arObjectsToSpawn[4];
+        }
+        else if (PlayerPrefs.GetString("statue") == "Bellosics")
+        {
+            return arObjectsToSpawn[5];
+        }
         else
         {
+            Debug.Log("Error selecting statue.");
             return null;
         }
     }
