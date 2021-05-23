@@ -69,6 +69,7 @@ public class ARPlacement : MonoBehaviour
     {
         var arObjectToSpawn = getObject();
         spawnedObject = Instantiate(arObjectToSpawn, PlacementPose.position, PlacementPose.rotation);
+        Debug.Log(PlacementPose.rotation);
         instructions.SetActive(false);
     }
 
@@ -84,19 +85,19 @@ public class ARPlacement : MonoBehaviour
         {
             return arObjectsToSpawn[1];
         }
-        else if (PlayerPrefs.GetString("statue") == "Mesko")
+        else if (PlayerPrefs.GetString("statue") == "Franc Ksaver Meško")
         {
             return arObjectsToSpawn[2];
         }
-        else if (PlayerPrefs.GetString("statue") == "Gandhi")
+        else if (PlayerPrefs.GetString("statue") == "Kip Mathatme Gandhija")
         {
             return arObjectsToSpawn[3];
         }
-        else if (PlayerPrefs.GetString("statue") == "Gregl")
+        else if (PlayerPrefs.GetString("statue") == "Spomenik Radu Iršiču")
         {
             return arObjectsToSpawn[4];
         }
-        else if (PlayerPrefs.GetString("statue") == "Bellosics")
+        else if (PlayerPrefs.GetString("statue") == "Bellosics Bálint")
         {
             return arObjectsToSpawn[5];
         }

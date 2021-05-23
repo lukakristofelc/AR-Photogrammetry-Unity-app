@@ -16,21 +16,21 @@ public class SetStatueScript : MonoBehaviour
 
     public void Kip3()
     {
-        PlayerPrefs.SetString("statue", "Mesko");
+        PlayerPrefs.SetString("statue", "Franc Ksaver Meško");
     }
 
     public void Kip4()
     {
-        PlayerPrefs.SetString("statue", "Gandhi");
+        PlayerPrefs.SetString("statue", "Kip Mathatme Gandhija");
     }
 
     public void Kip5()
     {
-        PlayerPrefs.SetString("statue", "Gregl");
+        PlayerPrefs.SetString("statue", "Spomenik Radu Iršiču");
     }
 
     public void Kip6()
     {
-        PlayerPrefs.SetString("statue", "Bellosics");
+        PlayerPrefs.SetString("statue", "Bellosics Bálint");
     }
 }
