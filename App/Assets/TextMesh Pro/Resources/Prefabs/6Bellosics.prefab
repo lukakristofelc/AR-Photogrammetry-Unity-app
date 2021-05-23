@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &6887859973101673636
+--- !u!1 &5662641986392603122
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,7 +8,8 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 4395931425296097097}
+  - component: {fileID: 3171196677776210463}
+  - component: {fileID: 7353320394662403613}
   m_Layer: 0
   m_Name: 6Bellosics
   m_TagString: Untagged
@@ -16,27 +17,43 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4395931425296097097
+--- !u!4 &3171196677776210463
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6887859973101673636}
-  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_GameObject: {fileID: 5662641986392603122}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -4.259, y: 0, z: 0}
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_Children:
-  - {fileID: 6875840292115202664}
+  - {fileID: 5649979674682959678}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
---- !u!1001 &6404502595660227971
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7353320394662403613
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5662641986392603122}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1caf078ad1c4b42ec924ad2a643bb2a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 1
+  friction: 1
+  lerpSpeed: 1
+  xDeg: 0
+--- !u!1001 &5323953951087444181
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 4395931425296097097}
+    m_TransformParent: {fileID: 3171196677776210463}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: c56b14637e9e243caa55966eed3a0f0d,
         type: 3}
@@ -118,11 +135,31 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bellosics
       objectReference: {fileID: 0}
+    - target: {fileID: 1151388028547126963, guid: c56b14637e9e243caa55966eed3a0f0d,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1151388028547126963, guid: c56b14637e9e243caa55966eed3a0f0d,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1151388028547126963, guid: c56b14637e9e243caa55966eed3a0f0d,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1151388028547126963, guid: c56b14637e9e243caa55966eed3a0f0d,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 180
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c56b14637e9e243caa55966eed3a0f0d, type: 3}
---- !u!4 &6875840292115202664 stripped
+--- !u!4 &5649979674682959678 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: c56b14637e9e243caa55966eed3a0f0d,
     type: 3}
-  m_PrefabInstance: {fileID: 6404502595660227971}
+  m_PrefabInstance: {fileID: 5323953951087444181}
   m_PrefabAsset: {fileID: 0}
